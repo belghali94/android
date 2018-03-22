@@ -4,6 +4,7 @@
  *  @author Bartek Przybylski
  *  @author David A. Velasco
  *  @author David González Verdugo
+ *  @author Christian Schabesberger
  *  Copyright (C) 2011  Bartek Przybylski
  *  Copyright (C) 2016 ownCloud GmbH.
  *
@@ -142,9 +143,7 @@ public class FileDisplayActivity extends HookActivity
     private OCFile mWaitingToSend;
 
     private LocalBroadcastManager mLocalBroadcastManager;
-
-    // private IndexedForest<FileDisplayActivity> mPendingCameraUploads = new IndexedForest<>();
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log_OC.v(TAG, "onCreate() start");

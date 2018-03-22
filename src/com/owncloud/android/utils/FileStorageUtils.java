@@ -3,6 +3,7 @@
  *
  *   @author David A. Velasco
  *   @author David González Verdugo
+ *   @author Christian Schabesberger
  *
  *   Copyright (C) 2017 ownCloud GmbH.
  *
@@ -216,13 +217,13 @@ public class FileStorageUtils {
      */
     public static Vector<OCFile> sortFolder(Vector<OCFile> files){
         switch (mSortOrder){
-        case 0:
+        case SORT_NAME:
             files = FileStorageUtils.sortByName(files);
             break;
-        case 1:
+        case SORT_DATE:
             files = FileStorageUtils.sortByDate(files);
             break;
-        case 2:
+        case SORT_SIZE:
             files = FileStorageUtils.sortBySize(files);
             break;
         }
